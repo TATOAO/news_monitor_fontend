@@ -1,0 +1,11 @@
+{
+  "name": "news_monitor_app",
+  "version": "1.0.0",
+  "description": "Please use react to build a web application according to the background below.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
