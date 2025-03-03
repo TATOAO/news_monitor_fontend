@@ -1,0 +1,63 @@
+:root {
+  /* Volume bar colors and effects */
+  --volume-up-color: #FF0000;
+  --volume-up-opacity: 1;
+  --volume-up-shadow-blur: 20px;
+  --volume-up-shadow-color: #FF0000;
+  
+  --volume-down-color: #00FF00;
+  --volume-down-opacity: 1;
+  --volume-down-shadow-blur: 20px;
+  --volume-down-shadow-color: #00FF00;
+  
+  --volume-no-news-color: #D3D3D3;
+  --volume-no-news-opacity: 0.8;
+}
+
+.stock-chart-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Candlestick colors */
+.candlestick-up {
+  --color: #ef232a;
+  --border-color: #ef232a;
+}
+
+.candlestick-down {
+  --color: #14b143;
+  --border-color: #14b143;
+}
+
+/* Volume bar colors */
+.volume-bar-with-news-up {
+  --color: #FF0000;
+  --opacity: 1;
+  --shadow-blur: 20px;
+  --shadow-color: #FF0000;
+}
+
+.volume-bar-with-news-down {
+  --color: #00FF00;
+  --opacity: 1;
+  --shadow-blur: 20px;
+  --shadow-color: #00FF00;
+}
+
+.volume-bar-no-news {
+  --color: #D3D3D3;
+  --opacity: 0.8;
+}
+
+/* Override some echarts tooltip styles */
+.echarts-tooltip {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  padding: 10px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1) !important;
+} 
