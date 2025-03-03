@@ -1,12 +1,14 @@
 // API Configuration
 export const API_CONFIG = {
   // Base URL for the API
-  BASE_URL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000/api',
+  BASE_URL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000/api/v1',
   
   // Endpoints
   ENDPOINTS: {
-    NEWS_EVENTS: '/news-events',
-    MARKET_DATA: '/market-data',
+    NEWS: '/news',
+    MARKET: '/market',
+    HEALTH: '/api/health',
+    VERSION: '/api/version',
   },
   
   // API request configuration

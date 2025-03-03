@@ -7,7 +7,7 @@ if TYPE_CHECKING:
     from .analysis import Analysis
     from .asset import Asset
 
-class News(SQLModel, table=True):
+class NewsItem(SQLModel, table=True):
     __tablename__ = "news"
 
     id: Optional[int] = Field(default=None, primary_key=True, index=True)
@@ -40,5 +40,5 @@ class AssetMention(SQLModel, table=True):
     mention_count: int = Field(default=1)
     
     # Relationships
-    news: News = Relationship(back_populates="asset_mentions")
+    news: NewsItem = Relationship(back_populates="asset_mentions")
     asset: "Asset" = Relationship(back_populates="news_mentions")

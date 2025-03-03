@@ -7,6 +7,7 @@ from contextlib import asynccontextmanager
 import asyncio
 # Import all models to ensure they are registered with SQLModel
 from .models import user, news, asset, analysis
+from .api.v1.endpoints import news, market
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -31,6 +32,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include routers
+app.include_router(news.router, prefix="/api/v1", tags=["news"])
+app.include_router(market.router, prefix="/api/v1", tags=["market"])
 
 # Health check endpoint
 @app.get("/api/health")

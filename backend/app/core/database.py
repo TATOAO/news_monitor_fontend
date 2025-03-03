@@ -18,7 +18,7 @@ except Exception as e:
 SessionLocal = Session(bind=engine)
 
 # Dependency to get DB session
-def get_db():
+def get_session():
     db = Session(engine)
     try:
         yield db
